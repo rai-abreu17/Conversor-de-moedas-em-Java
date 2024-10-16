@@ -56,9 +56,9 @@ public class Principal {
                 }
 
                 try {
-                    // Obtém a taxa de conversão usando a classe ConverteMoeda
+                   
                     double taxaConversao = ConverteMoeda.obterTaxaConversao(fromCurrency, toCurrency);
-                    // Realiza a conversão
+                   
                     double valorConvertido = valor * taxaConversao;
                     System.out.printf("Valor convertido: %.2f %s%n", valorConvertido, toCurrency);
                 } catch (Exception e) {
