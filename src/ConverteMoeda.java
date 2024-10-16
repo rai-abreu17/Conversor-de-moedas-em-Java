@@ -22,7 +22,6 @@ public class ConverteMoeda {
             String json = response.body();
             JsonObject jsonObject = JsonParser.parseString(json).getAsJsonObject();
 
-            // Verifica se o campo "conversion_rates" está presente
             if (jsonObject.has("conversion_rates")) {
                 JsonObject rates = jsonObject.getAsJsonObject("conversion_rates");
                 if (rates.has(toCurrency)) {
